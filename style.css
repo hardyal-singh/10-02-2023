@@ -1,0 +1,91 @@
+body{margin: 0;
+	padding: 0;
+background-color: black;
+color:white;}
+
+*{box-sizing:border-box;}
+
+/*-----------header style-------*/
+/*------------------------------*/
+.header{display: flex;
+flex-direction: column;}
+
+nav{display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 5vw 2vw 5vw;}
+
+nav ul{display:flex;
+gap:10px;
+list-style-type:none;
+align-items: center;}
+
+img[alt="hambrger"]{display: none;}
+
+li.home{background-color:rgb(100, 100, 224);
+padding: 5px;
+border-radius: 5px;}
+
+.section{display: flex;
+justify-content: center;
+gap:30px;}
+
+.first-line{display: flex;
+align-items: center;}
+
+.second-line p{color:#B9BE4B;}
+
+img[alt="hand"]{width:2vw;height: 2vw;}
+img[alt="pc-image"]{width:30vw;height: 20vw;}
+
+/*----------main---------*/
+/*------------------------*/
+.main{display: flex;
+flex-direction: column;
+align-items: center;
+margin-top:5px;}
+
+.line1{height:2px;
+width:70px;
+background-color:blue;
+margin:0px;}
+
+img[alt="image-main"]{width:30vw}
+
+.image-list{display: grid;
+grid-template-columns: 1fr 1fr;
+gap:2vh;}
+
+.image{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+/*----------------footer--------*/
+/*-------------------------------*/
+
+.footer{display: flex;
+flex-direction: column;
+align-items: center;
+}
+.images{margin-bottom: 5px;}
+
+img[alt="github"]{width:20px;height: 20px;}
+img[alt="linkedin"]{width:20px;height: 20px;}
+img[alt="outlook"]{width:20px;height: 20px;}
+
+/*---------Media Query--------*/
+/*-----------------------------*/
+
+@media screen and (max-width:568px){
+	/*----media for header-----*/
+img[alt="hambrger"]{display: block;}
+nav ul{display: none;}
+
+.section{flex-direction: column;
+align-items: center;}
+
+/*--------media for main----*/
+.image-list{grid-template-columns: auto;}
+
+}
